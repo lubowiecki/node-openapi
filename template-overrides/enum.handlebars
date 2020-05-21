@@ -1,0 +1,5 @@
+export type {{typeName}} = {{#enumValues}}{{{value}}}{{^@last}} | {{/@last}}{{/enumValues}};
+export const {{typeName}} = {
+{{#enumValues}} {{name}}: {{{value}}} as {{@root.typeName}}{{^@last}},
+{{/@last}}{{/enumValues}}
+};
