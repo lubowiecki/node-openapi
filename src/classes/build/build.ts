@@ -5,7 +5,6 @@ import {flatten, is, mergeDeepLeft, reduce} from 'ramda';
 import * as path from 'path';
 
 import {Loader} from '../loader/loader';
-
 export class Build {
   static spec(source: string | string[], dist: string, filename: string): void {
     if (is(Array, source)) {
