@@ -10,5 +10,8 @@ export const config = {
     fileName: 'index',
   },
   sourceUrl: './src/docs/index.json',
-  tsModelsUrl: './src/rest/api',
+  typescript: {
+    dist: './src/rest/api',
+    typesOnly: true,
+  },
 };

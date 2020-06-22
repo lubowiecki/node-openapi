@@ -1,6 +1,4 @@
 {
-  "input": "http://localhost:3011",
-  "output": "./src/app/common/models/swagger",
   "prefix": "Api",
   "ignoreUnusedModels": false,
   "minParamsForContainer": 2,
