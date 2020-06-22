@@ -51,7 +51,7 @@ export class Build {
     }
   }
 
-  static typescript(source: string, dist: string): void {
+  static typescript(source: string, dist: string, typesOnly: boolean): void {
     emptyDirSync(dist);
     const configPath = path.resolve(path.join(__dirname, '../../../ng-openapi-gen.json'));
     const templatePath = path.resolve(path.join(__dirname, '../../../template-overrides'));
@@ -62,7 +62,9 @@ export class Build {
         message: `Files generated in directory: ${dist}`,
       });
 
-      this.removeUnusedFiles(dist);
+      if (typesOnly === true) {
+        this.removeUnusedFiles(dist);
+      }
     } catch (error) {
       Notify.error({message: 'Generation error', error});
     }

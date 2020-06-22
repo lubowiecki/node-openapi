@@ -30,7 +30,7 @@ openapi serve spec --port=3011 --host=http://localhost --source=./dist/openapi.j
 
 ```console
 openapi serve spec
-openapi build typescript --source=http://localhost:3011 --dist=./src/rest/api
+openapi build typescript --source=http://localhost:3011 --dist=./src/rest/api --typesOnly=true
 ```
 
 ## Default config
