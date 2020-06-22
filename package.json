@@ -1,6 +1,6 @@
 {
   "name": "@lubowiecki/node-openapi",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Openapi tools",
   "main": "dist/cli.js",
   "types": "dist/cli.d.ts",
@@ -30,7 +30,7 @@
   "homepage": "https://github.com/lubowiecki/node-openapi#readme",
   "dependencies": {
     "@lubowiecki/node-notify": "^1.0.2",
-    "@lubowiecki/ts-utility": "^1.0.4",
+    "@lubowiecki/ts-utility": "^1.0.5",
     "@openapitools/openapi-generator-cli": "^1.0.13-4.3.1",
     "express": "^4.17.1",
     "fs-extra": "^9.0.0",
